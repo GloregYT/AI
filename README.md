@@ -14,13 +14,13 @@ def divider(a, b):
         
     return a / b
 
-data = {10: 2, 2: 5, "123": 4, 18: 0, 8: 4}  # Прибрано некоректний ключ []
+data = {10: 2, 2: 5, "123": 4, 18: 0, 8: 4}
 
 for key in data:
 
     try:
     
-        res = divider(int(key), data[key])  # Додано конвертацію ключа до int
+        res = divider(int(key), data[key])
         
         result.append(res)
         
@@ -40,7 +40,7 @@ for key in data:
     
         print(f"TypeError: {e} for key {key}.")
         
-    except Exception as e:  # Загальний виняток для інших випадків
+    except Exception as e: 
     
         print(f"Unexpected error {type(e).__name__}: {e} for key {key}.")
 
